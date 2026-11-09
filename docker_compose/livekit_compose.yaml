@@ -1,0 +1,16 @@
+name: livekit
+services:
+  livekit:
+    image: livekit/livekit-server:latest
+    command: --dev --bind 0.0.0.0
+    environment:
+      LIVEKIT_KEYS: "{YOUR_LIVEKIT_API_KEY}: {YOUR_LIVEKIT_API_SECRET}"
+      LIVEKIT_CONFIG: |
+        port: 6880
+        rtc:
+          tcp_port: 6881
+          udp_port: 6882
+    ports:
+      - "6880:6880"
+      - "6881:6881"
+      - "6882:6882/udp"

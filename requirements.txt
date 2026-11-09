@@ -1,0 +1,24 @@
+# For Loading environment variables
+python-dotenv
+
+# For LiveKit integration
+livekit
+livekit-api
+livekit-plugins-dtln
+
+# For Fast API and Uvicorn
+httpx
+fastapi
+uvicorn[standard]
+
+# For Audio processing
+silero-vad
+torch
+torchaudio
+scipy
+numpy
+
+
+
+
+
